@@ -5,7 +5,7 @@ return {
       table.insert(opts.sources, { name = "emoji" })
       local cmp = require("cmp")
       opts.mapping = vim.tbl_deep_extend("force", opts.mapping, {
-        "Tab"] = cmp.mapping.confirm({ select = true }),
+        ["Tab"] = cmp.mapping.confirm({ select = true }),
         ["CR"] = cmp.config.disable,
       })
     end,
